@@ -8,7 +8,7 @@ Install libs:
   sudo pip install numpy
 
 Get the test video here:
-  https://www.dropbox.com/s/znvo0qizlrsit66/vid-large.mp4?dl=0
+  https://www.dropbox.com/s/znvo0qizlrsit66/vid-large.mp4?dl=1
 
 Split the video into frames like this:
   ffmpeg -i path/to/vid-large.mp4 -vf fps=1 ~/Desktop/frames/out%03d.png

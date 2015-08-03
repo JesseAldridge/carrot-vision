@@ -2,7 +2,7 @@ import glob, sys, os
 
 import numpy as np
 
-import l0_image, l3_filter
+import l0_image, l3_filter, config
 
 # Load needles and frames.
 
@@ -10,7 +10,7 @@ needles_path = os.path.join(os.path.dirname(__file__), 'stuff/needles')
 filenames = os.listdir(needles_path)
 needles = [l0_image.Image(os.path.join(needles_path, filename)) for filename in filenames]
 
-frame_paths = glob.glob(os.path.expanduser('~/Desktop/frames/out030*.png'))
+frame_paths = glob.glob(os.path.expanduser(os.path.join(config.frames_path, 'out030*.png')))
 if len(sys.argv) > 1:
   frame_paths = sys.argv[2:]
 

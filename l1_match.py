@@ -3,6 +3,7 @@ import sys, os
 import cv2
 import numpy as np
 
+import config
 import l0_image
 
 '''
@@ -45,7 +46,7 @@ if __name__ == '__main__':
   if len(sys.argv) == 1:
 
     needle_path = 'stuff/needles/oroweat.jpeg'
-    hay_path = os.path.expanduser('~/Desktop/frames/out0144.png')
+    hay_path = os.path.expanduser(config.get_frame('out0144.png'))
     # hay_path = '/Users/jessealdridge/Desktop/frames/out0302.png'
 
     # needle_path = 'stuff/needles/bud-light.jpeg'
@@ -59,7 +60,7 @@ if __name__ == '__main__':
     # needle_path = 'stuff/needles/therma_care.jpeg'
     # hay_path = os.path.expanduser('~/Desktop/frames/out0622.png')
 
-  needle = l0_image.Image(needle_path, resize=.5)
+  needle = l0_image.Image(needle_path)
   hay = l0_image.Image(hay_path)
 
   points1, points2, match_dists = get_match_points(needle, hay)

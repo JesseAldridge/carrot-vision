@@ -4,8 +4,8 @@ import numpy as np
 import cv2
 from sklearn import cluster
 
-import l0_image
-import l1_match
+import l0_image, l1_match, config
+
 
 '''
 Find the biggest cluster of matched points.
@@ -59,7 +59,7 @@ if __name__ == '__main__':
   # hay_path = os.path.expanduser('~/Desktop/frames/out0301.png')
 
   needle = l0_image.Image('stuff/needles/bud-light.jpeg')
-  hay_path = os.path.expanduser('~/Desktop/frames/out0271.png')
+  hay_path = os.path.expanduser(config.get_frame('out0271.png'))
 
   hay = l0_image.Image(hay_path)
   points1, points2, sdists, kmeans, biggest_group = get_match_points(needle, hay)

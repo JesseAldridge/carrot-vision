@@ -3,6 +3,8 @@ import os, colorsys
 import cv2
 import numpy as np
 
+import config
+
 '''
 Load an image, run SIFT, and draw some test lines on it.
 '''
@@ -52,7 +54,7 @@ def display(image):
   os.system("open -a Preview stuff/out.png")
 
 if __name__ == '__main__':
-  image = Image('stuff/test_frames/bud-light-04_22.png', resize=.5)
+  image = Image(config.get_frame('out0001.png'), resize=.5)
   canvas = draw_lines(
     image.image, [(10,10), (20,20), (30,30)], [(100,10), (100,100), (100,200)], [1,2,3])
   display(canvas)

@@ -1,0 +1,7 @@
+venv
+*.pyc
+.DS_Store
+temp.py
+temp1.py
+out.csv
+test_*.py

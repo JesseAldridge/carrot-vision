@@ -49,16 +49,16 @@ def filter_matches(needle, hay, max_dist_from_median=60):
   return points1, points2, match_dists, kmeans
 
 if __name__ == '__main__':
-  # needle_path = 'stuff/needles/oroweat.jpeg'
-  # hay_path = os.path.expanduser('~/Desktop/frames/out0144.png')
+  needle_path = 'stuff/needles/oroweat.jpeg'
+  hay_path = config.get_frame('out0144.png')
   # hay_path = '/Users/jessealdridge/Desktop/frames/out0300.png'
 
   # needle_path = 'stuff/needles/bud-light.jpeg'
   # hay_path = os.path.expanduser('~/Desktop/frames/out0001.png')
   # hay_path = os.path.expanduser('~/Desktop/frames/out0261.png')
 
-  needle_path = 'stuff/needles/jb.jpg'
-  hay_path = os.path.expanduser(config.get_frame('out0007.png')) # oh god why
+  # needle_path = 'stuff/needles/jb.jpg'
+  # hay_path = os.path.expanduser(config.get_frame('out0007.png')) # oh god why
   # hay_path = os.path.expanduser('~/Desktop/frames/out0077.png')
   # hay_path = os.path.expanduser('~/Desktop/frames/out0261.png')
   # hay_path = os.path.expanduser('~/Desktop/frames/out0300.png')

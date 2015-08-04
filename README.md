@@ -1,4 +1,4 @@
-[Example](stuff/example.png)
+![Example](stuff/example.png)
 
 
 Setup

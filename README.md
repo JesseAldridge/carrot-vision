@@ -1,5 +1,8 @@
-![Example](stuff/example.png)
 
+Carrot Vision
+-------------
+
+![Example](stuff/example.png)
 
 Setup
 -------

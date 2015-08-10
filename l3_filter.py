@@ -24,7 +24,7 @@ def filter_matches(needle, hay, max_dist_from_median=60):
   points2 = [points2[i] for i, _ in biggest_group]
   match_dists = [match_dists[i] for i, _ in biggest_group]
 
-  # Delete points that don't have proportianal dist in needle and hay.
+  # Delete points that don't have proportional dist in needle and hay.
 
   ratios = []
   for i in range(1, len(points1)):

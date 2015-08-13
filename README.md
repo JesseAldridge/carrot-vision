@@ -13,13 +13,13 @@ Install opencv:
 
   Look for this in the output of the above command.  If you see it, run the commands it tells you to run:
 
-  ==> Caveats
-  Python modules have been installed and Homebrew's site-packages is not
-  in your Python sys.path, so you will not be able to import the modules
-  this formula installed. If you plan to develop with these modules,
-  please run:
-    mkdir -p /Users/Jesse/Library/Python/2.7/lib/python/site-packages
-    echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/Jesse/Library/Python/2.7/lib/python/site-packages/homebrew.pth
+    ==> Caveats
+    Python modules have been installed and Homebrew's site-packages is not
+    in your Python sys.path, so you will not be able to import the modules
+    this formula installed. If you plan to develop with these modules,
+    please run:
+      mkdir -p /Users/Jesse/Library/Python/2.7/lib/python/site-packages
+      echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/Jesse/Library/Python/2.7/lib/python/site-packages/homebrew.pth
 
 Install other stuff:
 

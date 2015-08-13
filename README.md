@@ -35,7 +35,7 @@ Get the test video (500 MB):
 Split the video into frames:
 
     mkdir ~/carrot-frames
-    ffmpeg -i "path/to/video.mp4" -vf fps=1 ~/carrot-frames/out%04d.png
+    ffmpeg -i video.mp4 -vf fps=1 ~/carrot-frames/out%04d.png
 
 Run the analysis and dump to csv:
 

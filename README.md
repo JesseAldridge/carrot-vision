@@ -11,7 +11,7 @@ Install opencv:
 
     brew install opencv
 
-  Look for this in the output of the above command.  If you see it, run the commands it tells you to run:
+  Look for the text below in the output from the above command.  If you see it, run the commands it tells you to run:
 
     ==> Caveats
     Python modules have been installed and Homebrew's site-packages is not

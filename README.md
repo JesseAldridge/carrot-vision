@@ -11,17 +11,18 @@ Install libs:
 
     brew install opencv
     brew install ffmpeg
+    brew install youtube-dl
     sudo pip install sklearn
     sudo pip install numpy
 
-Get the test video:
+Get the test video (500 MB):
 
-https://www.dropbox.com/s/znvo0qizlrsit66/vid-large.mp4?dl=1
+    youtube-dl https://www.youtube.com/watch?v=Bs5zfeKced8
 
 Split the video into frames:
 
     mkdir ~/carrot-frames
-    ffmpeg -i path/to/vid-large.mp4 -vf fps=1 ~/carrot-frames/out%03d.png
+    ffmpeg -i "path/to/video.mp4" -vf fps=1 ~/carrot-frames/out%03d.png
 
 Run the analysis and dump to csv:
 
